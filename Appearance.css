@@ -1,0 +1,240 @@
+:root {
+    --gradient: repeating-linear-gradient(90deg, rgba(0, 195, 255, 0.2) 0px, rgba(0, 195, 255, 0.4) 100px, rgba(0, 195, 255, 0.3) 200px, rgba(0, 195, 255, 0.4) 300px, rgba(0, 195, 255, 0.2) 400px, rgba(0, 195, 255, 0.2) 500px);
+}
+
+.about{
+    --gradient: repeating-linear-gradient(90deg, rgba(100, 100, 100, 0.2) 0px, rgba(100, 100, 100, 0.4) 100px, rgba(100, 100, 100, 0.3) 200px, rgba(100, 100, 100, 0.4) 300px, rgba(100, 100, 100, 0.2) 400px, rgba(100, 100, 100, 0.2) 500px);
+}
+
+.ddos{
+    --gradient: repeating-linear-gradient(90deg, rgba(255, 0, 0, 0.2) 0px, rgba(255, 0, 0, 0.4) 100px, rgba(255, 0, 0, 0.3) 200px, rgba(255, 0, 0, 0.4) 300px, rgba(255, 0, 0, 0.2) 400px, rgba(255, 0, 0, 0.2) 500px);
+}
+
+.xss{
+    --gradient: repeating-linear-gradient(90deg, rgba(0, 0, 255, 0.2) 0px, rgba(9, 0, 255, 0.4) 100px, rgba(0, 0, 255, 0.3) 200px, rgba(0, 0, 255, 0.4) 300px, rgba(0, 0, 255, 0.2) 400px, rgba(9, 0, 255, 0.2) 500px);
+}
+
+.mitm{
+    --gradient: repeating-linear-gradient(90deg, rgba(255, 155, 0, 0.2) 0px, rgba(255, 155, 0, 0.4) 100px, rgba(255, 155, 0, 0.3) 200px, rgba(255, 155, 0, 0.4) 300px, rgba(255, 155, 0, 0.2) 400px, rgba(255, 155, 0, 0.2) 500px);
+}
+
+.login{
+    --gradient: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.4) 100px, rgba(0, 0, 0, 0.3) 200px, rgba(0, 0, 0, 0.4) 300px, rgba(0, 0, 0, 0.2) 400px, rgba(0, 0, 0, 0.2) 500px);
+}
+
+.start{
+    --gradient: repeating-linear-gradient(90deg, rgba(0, 255, 0, 0.2) 0px, rgba(0, 255, 0, 0.4) 100px, rgba(0, 255, 0, 0.3) 200px, rgba(0, 255, 0, 0.4) 300px, rgba(0, 255, 0, 0.2) 400px, rgba(0, 255, 0, 0.2) 500px);
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {   /*Navbar position dessutom ser till att navbar har plats mellan kanterna*/
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    box-sizing: border-box;
+    background-size: 32px;
+    background-position: -1px 12px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    background-image: url("Bilder/HexagonTile.png");
+}
+
+.navbar ul { /*Navbar bakgrund.*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--gradient);
+    border-radius: 10px;
+    top: 0;
+    display: flex;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    animation: MK8FB 10s infinite linear;
+}
+
+@keyframes MK8FB { /*Navbar animation*/
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 1900px;
+    }
+}
+
+.navbar ul li a { /*Navbar link position*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px black, 0px 0px 10px black;
+}
+
+.navbar ul li a:hover { /*Navbar hover färg*/
+    background-color: #11111131;
+}
+
+@media (max-width: 720px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar ul li a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+.flex2 img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    max-width: 128px;
+}
+
+.flex2 p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    max-width: 128px;
+}
+
+.flex img{
+    height: auto;
+    width: 256px;
+}
+
+.login_special{
+    padding-top: 360px;
+}
+
+button {
+    border: 2px solid rgba(0, 0, 0, 1);
+    padding: 20px 30px;
+    background-color: #00000000;
+}
+
+button:hover {
+    animation: Button 0.25s forwards;
+}
+
+@keyframes Button { /*Button animation*/
+    0% {
+        padding: 20px 30px;
+        background-color: #00000000;
+    }
+    100% {
+        padding: 20px 40px;
+        background-color: #00000033;
+    }
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    margin: 30px auto 10px auto;
+    max-width: 90%;
+    width: 680px;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    margin: 30px auto 10px auto;
+    max-width: 90%;
+    width: 680px;
+    line-height: 1.3;
+}
+
+.center {
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0px auto;
+    max-width: 720px;
+}
+
+p {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin: 30px auto 10px auto;
+    max-width: 90%;
+    width: 680px;
+    line-height: 1.8;
+    color: #1a1a1a;
+}
+
+footer {
+    
+    background-image: url("Bilder/HexagonTile.png");
+    background-size: 40px;
+    margin: 100px 0px 0px 0px;
+    
+}
+
+footer p{
+    border-top: 8px solid rgba(255, 255, 255, 0.4);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px black, 0px 0px 10px black;
+    background: var(--gradient);
+    padding: 50px 15% 100px 15%;
+    margin: 0;
+    text-align: center;
+    width: auto;
+    max-width: 100%;
+    animation: MK8FB 20s infinite linear;
+}
+
+input {
+    max-width: 540px;
+    width: 70%;
+    height: 36px;
+}
