@@ -2,29 +2,17 @@
     --gradient: repeating-linear-gradient(90deg, rgba(0, 195, 255, 0.2) 0px, rgba(0, 195, 255, 0.4) 100px, rgba(0, 195, 255, 0.3) 200px, rgba(0, 195, 255, 0.4) 300px, rgba(0, 195, 255, 0.2) 400px, rgba(0, 195, 255, 0.2) 500px);
 }
 
-.about{
+.English_subject{
     --gradient: repeating-linear-gradient(90deg, rgba(100, 100, 100, 0.2) 0px, rgba(100, 100, 100, 0.4) 100px, rgba(100, 100, 100, 0.3) 200px, rgba(100, 100, 100, 0.4) 300px, rgba(100, 100, 100, 0.2) 400px, rgba(100, 100, 100, 0.2) 500px);
 }
 
-.ddos{
+.Index{
     --gradient: repeating-linear-gradient(90deg, rgba(255, 0, 0, 0.2) 0px, rgba(255, 0, 0, 0.4) 100px, rgba(255, 0, 0, 0.3) 200px, rgba(255, 0, 0, 0.4) 300px, rgba(255, 0, 0, 0.2) 400px, rgba(255, 0, 0, 0.2) 500px);
 }
 
-.xss{
+.Tanja{
     --gradient: repeating-linear-gradient(90deg, rgba(0, 0, 255, 0.2) 0px, rgba(9, 0, 255, 0.4) 100px, rgba(0, 0, 255, 0.3) 200px, rgba(0, 0, 255, 0.4) 300px, rgba(0, 0, 255, 0.2) 400px, rgba(9, 0, 255, 0.2) 500px);
-}
-
-.mitm{
-    --gradient: repeating-linear-gradient(90deg, rgba(255, 155, 0, 0.2) 0px, rgba(255, 155, 0, 0.4) 100px, rgba(255, 155, 0, 0.3) 200px, rgba(255, 155, 0, 0.4) 300px, rgba(255, 155, 0, 0.2) 400px, rgba(255, 155, 0, 0.2) 500px);
-}
-
-.login{
-    --gradient: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.4) 100px, rgba(0, 0, 0, 0.3) 200px, rgba(0, 0, 0, 0.4) 300px, rgba(0, 0, 0, 0.2) 400px, rgba(0, 0, 0, 0.2) 500px);
-}
-
-.start{
-    --gradient: repeating-linear-gradient(90deg, rgba(0, 255, 0, 0.2) 0px, rgba(0, 255, 0, 0.4) 100px, rgba(0, 255, 0, 0.3) 200px, rgba(0, 255, 0, 0.4) 300px, rgba(0, 255, 0, 0.2) 400px, rgba(0, 255, 0, 0.2) 500px);
-}
+}   
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
