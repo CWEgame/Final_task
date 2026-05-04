@@ -28,7 +28,7 @@
     background-position: -1px 12px;
     margin: 0 auto;
     backdrop-filter: blur(10px);
-    background-image: url("Bilder/HexagonTile.png");
+    background-image: url("./Bilder/Dragon.jpg");
 }
 
 .navbar ul { /*Navbar bakgrund.*/
@@ -151,6 +151,11 @@ button:hover {
     }
 }
 
+.quiz_section {
+    margin: 30px auto 10px auto;
+    text-align: center;
+}
+
 h1 {
     margin-top: 100px;
     font-size: 48px;
@@ -202,7 +207,7 @@ p {
 
 footer {
     
-    background-image: url("Bilder/HexagonTile.png");
+    background-image: url("./Bilder/Dragon.jpg");
     background-size: 40px;
     margin: 100px 0px 0px 0px;
     
@@ -219,6 +224,7 @@ footer p{
     width: auto;
     max-width: 100%;
     animation: MK8FB 20s infinite linear;
+    font-weight: bold;
 }
 
 input {
