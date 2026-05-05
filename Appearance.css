@@ -24,11 +24,11 @@
     left: 10px;
     right: 10px;
     box-sizing: border-box;
-    background-size: 32px;
+    background-size: 500px;
     background-position: -1px 12px;
     margin: 0 auto;
     backdrop-filter: blur(10px);
-    background-image: url("./Bilder/Dragon.jpg");
+    background-image: url("./Bilder/Blue\ wave\ pattern.jpg");
 }
 
 .navbar ul { /*Navbar bakgrund.*/
@@ -130,25 +130,17 @@ body{
     padding-top: 360px;
 }
 
-button {
+button { 
     border: 2px solid rgba(0, 0, 0, 1);
     padding: 20px 30px;
     background-color: #00000000;
+    transition: all 0.25s ease-in-out;
 }
 
-button:hover {
-    animation: Button 0.25s forwards;
-}
-
-@keyframes Button { /*Button animation*/
-    0% {
-        padding: 20px 30px;
-        background-color: #00000000;
-    }
-    100% {
-        padding: 20px 40px;
-        background-color: #00000033;
-    }
+button:hover { /*Button animation*/
+    padding: 20px 40px;
+    background-color: #00000033;
+    transition: all 0.25s ease-in-out;
 }
 
 .quiz_section {
@@ -207,8 +199,8 @@ p {
 
 footer {
     
-    background-image: url("./Bilder/Dragon.jpg");
-    background-size: 40px;
+    background-image: url("./Bilder/Blue\ wave\ pattern.jpg");
+    background-size: 500px;
     margin: 100px 0px 0px 0px;
     
 }
