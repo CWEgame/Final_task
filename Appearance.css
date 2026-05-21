@@ -13,24 +13,24 @@
 .English_subject {
   --gradient: repeating-linear-gradient(
     90deg,
-    rgba(100, 100, 100, 0.2) 0px,
-    rgba(100, 100, 100, 0.4) 100px,
-    rgba(100, 100, 100, 0.3) 200px,
-    rgba(100, 100, 100, 0.4) 300px,
-    rgba(100, 100, 100, 0.2) 400px,
-    rgba(100, 100, 100, 0.2) 500px
+    rgba(0, 0, 255, 0.2) 0px,
+    rgba(9, 0, 255, 0.4) 100px,
+    rgba(0, 0, 255, 0.3) 200px,
+    rgba(0, 0, 255, 0.4) 300px,
+    rgba(0, 0, 255, 0.2) 400px,
+    rgba(9, 0, 255, 0.2) 500px
   );
 }
 
 .Index {
   --gradient: repeating-linear-gradient(
     90deg,
-    rgba(255, 0, 0, 0.2) 0px,
-    rgba(255, 0, 0, 0.4) 100px,
-    rgba(255, 0, 0, 0.3) 200px,
-    rgba(255, 0, 0, 0.4) 300px,
-    rgba(255, 0, 0, 0.2) 400px,
-    rgba(255, 0, 0, 0.2) 500px
+    rgba(0, 0, 255, 0.2) 0px,
+    rgba(9, 0, 255, 0.4) 100px,
+    rgba(0, 0, 255, 0.3) 200px,
+    rgba(0, 0, 255, 0.4) 300px,
+    rgba(0, 0, 255, 0.2) 400px,
+    rgba(9, 0, 255, 0.2) 500px
   );
 }
 
@@ -45,6 +45,7 @@
     rgba(9, 0, 255, 0.2) 500px
   );
 }
+/*Gradient används för att animation och färgen ska fungera*/
 
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -53,7 +54,7 @@
 .navbar {
   /*Navbar position dessutom ser till att navbar har plats mellan kanterna*/
   position: fixed;
-  top: 10px;
+  top: 0px;
   left: 10px;
   right: 10px;
   box-sizing: border-box;
@@ -165,11 +166,8 @@ body {
   width: 256px;
 }
 
-.login_special {
-  padding-top: 360px;
-}
-
 button {
+  /*Button design*/
   border: 2px solid rgba(0, 0, 0, 1);
   padding: 20px 30px;
   background-color: #00000000;
