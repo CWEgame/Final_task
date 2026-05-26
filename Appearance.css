@@ -181,6 +181,31 @@ button:hover {
   transition: all 0.25s ease-in-out;
 }
 
+label {
+  /*Label design*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px auto;
+  flex-wrap: wrap;
+  max-width: 720px;
+}
+
+input {
+  /*Input design*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px auto;
+  flex-wrap: wrap;
+  max-width: 128px;
+}
+
+.mainquiz_section {
+  margin: 30px auto 10px auto;
+  text-align: center;
+}
+
 .quiz_section {
   margin: 30px auto 10px auto;
   text-align: center;
