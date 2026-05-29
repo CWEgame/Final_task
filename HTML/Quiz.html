@@ -2,12 +2,11 @@
 <html lang="en">
   <head>
     <title>Quiz start</title>
+    <!--Koden för att länka till CSS filen-->
     <link rel="stylesheet" href="../Appearance.css" />
+    <!--Koden anpassar sidan för mobil enheter -->
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   </head>
   <body class="about">
@@ -31,19 +30,19 @@
     <!--Koden i <nav> skapar en navigation bar och en länk till de andra sidorna-->
     <div class="mainquiz_section">
       <h1>Quiz</h1>
-      <label for="question1">1. What is my teachers last name?</label> <br />
+      <label for="answer1">1. What is my teachers last name?</label> <br />
       <input type="text" id="answer1" name="answer1" /> <br />
       <button onclick="checkAnswer(1)">Submit</button> <br />
       <br />
       <p id="result1"></p>
       <!--Koden som krävs för fråga 1-->
-      <label for="question2">2. When will my class end?</label> <br />
+      <label for="answer2">2. When will my class end?</label> <br />
       <input type="text" id="answer2" name="answer2" /> <br />
       <button onclick="checkAnswer(2)">Submit</button> <br />
       <br />
       <p id="result2"></p>
       <!--Koden som krävs för fråga 2-->
-      <label for="question3"
+      <label for="answer3"
         >3. What is the master con artist called in the book I am currently
         reading?</label
       >
@@ -58,7 +57,7 @@
         <p>William</p>
       </div>
     </footer>
-    <script src="C:\Users\wgsep\Downloads\Webutveckling\Final_task\Javascript\quiz.js"></script>
+    <script src="../Javascript/quiz.js"></script>
     <!--Länkar till javascript fil.-->
   </body>
 </html>

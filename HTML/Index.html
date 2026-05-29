@@ -2,12 +2,11 @@
 <html lang="en">
   <head>
     <title>English experience</title>
+    <!--Koden för att länka till CSS filen-->
     <link rel="stylesheet" href="../Appearance.css" />
+    <!--Koden anpassar sidan för mobil enheter -->
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body class="about">
     <header>
@@ -38,10 +37,16 @@
             English 6, that started on 2025-08-14 and will continue until
             2026-06-04
           </p>
-          <img src="../Bilder/English_class_start.png" width="100%" />
+          <img
+            src="../Bilder/English_class_start.png"
+            class="full-img"
+            alt="English class start"
+          />
+          <!--Koden för bilden och dess mått-->
         </div>
       </div>
     </div>
+    <!--Quiz introduktionen och delen där det finns en knapp som länkar till quiz sidan-->
     <div class="quiz_section">
       <h2>Quiz</h2>
       <div class="quiz">
@@ -50,10 +55,7 @@
           <br />
           Here you can then test how much you remember!
         </p>
-        <a href="Quiz.html">
-          <!--Länkar till quiz sidan-->
-          <button>Start</button>
-        </a>
+        <button onclick="window.location.href = 'Quiz.html'">Start</button>
       </div>
     </div>
     <footer>

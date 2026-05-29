@@ -118,12 +118,14 @@
     font-size: 14px;
   }
 }
+/*Adjursts the navigation bar for mobile devices*/
 
 body {
   margin: 0;
   padding: 0;
 }
 
+/*Makes the image and paragraphs sections flexible*/
 .flex {
   display: flex;
   flex-direction: row;
@@ -260,6 +262,7 @@ p {
   color: #1a1a1a;
 }
 
+/*The footer section that includes background image design and style*/
 footer {
   background-image: url("./Bilder/Blue\ wave\ pattern.jpg");
   background-size: 500px;

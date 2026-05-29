@@ -15,11 +15,12 @@ const correctAnswer2 = "2026-06-04";
 const correctAnswer3 = "Harvey Metcalfe";
 
 function checkAnswer(question) {
-  /*Kollar om svaret är rätt eller fel och skriver ut resultatet i HTML-elementen*/
+  /*Kollar om svaret är rätt eller fel och skriver ut resultatet i HTML-elementen, skapar också ett skydd mot XSS attacker*/
   if (question === 1) {
     if (answer1.value === correctAnswer1) {
       result1.textContent = "Correct!";
       result1.style.color = "green";
+      console.log(answer1.value);
     } else {
       result1.textContent = "Wrong!";
       result1.style.color = "red";
@@ -28,6 +29,7 @@ function checkAnswer(question) {
     if (answer2.value === correctAnswer2) {
       result2.textContent = "Correct!";
       result2.style.color = "green";
+      console.log(answer2.value);
     } else {
       result2.textContent = "Wrong!";
       result2.style.color = "red";
@@ -36,6 +38,7 @@ function checkAnswer(question) {
     if (answer3.value === correctAnswer3) {
       result3.textContent = "Correct!";
       result3.style.color = "green";
+      console.log(answer3.value);
     } else {
       result3.textContent = "Wrong!";
       result3.style.color = "red";

@@ -1,3 +1,4 @@
+/*This turns on the settings for prettier to format the code correctly on save*/
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode"
