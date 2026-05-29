@@ -14,23 +14,31 @@ const correctAnswer1 = "Bosilkovska";
 const correctAnswer2 = "2026-06-04";
 const correctAnswer3 = "Harvey Metcalfe";
 
-function checkAnswer() {
+function checkAnswer(question) {
   /*Kollar om svaret är rätt eller fel och skriver ut resultatet i HTML-elementen*/
-  if (answer1.value === correctAnswer1) {
-    result1.textContent = "Correct!";
-  } else {
-    result1.textContent = "Wrong!";
-  }
-
-  if (answer2.value === correctAnswer2) {
-    result2.textContent = "Correct!";
-  } else {
-    result2.textContent = "Wrong!";
-  }
-
-  if (answer3.value === correctAnswer3) {
-    result3.textContent = "Correct!";
-  } else {
-    result3.textContent = "Wrong!";
+  if (question === 1) {
+    if (answer1.value === correctAnswer1) {
+      result1.textContent = "Correct!";
+      result1.style.color = "green";
+    } else {
+      result1.textContent = "Wrong!";
+      result1.style.color = "red";
+    }
+  } else if (question === 2) {
+    if (answer2.value === correctAnswer2) {
+      result2.textContent = "Correct!";
+      result2.style.color = "green";
+    } else {
+      result2.textContent = "Wrong!";
+      result2.style.color = "red";
+    }
+  } else if (question === 3) {
+    if (answer3.value === correctAnswer3) {
+      result3.textContent = "Correct!";
+      result3.style.color = "green";
+    } else {
+      result3.textContent = "Wrong!";
+      result3.style.color = "red";
+    }
   }
 }
